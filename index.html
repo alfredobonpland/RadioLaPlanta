@@ -103,7 +103,7 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
     </div>
     <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
 </div>
-          <button 
+          
           <p class="note" id="note" role="status"></p>
         </div>
       </div>
@@ -172,7 +172,12 @@ let playing = false;
 
 
 function setState(on) {
-
+playing = on;
+  $("icon").firstElementChild.setAttribute("d", on ? PAUSE : PLAY);
+  play.setAttribute("aria-label", on ? "Pausar" : "Reproducir");
+  $("status").classList.toggle("live", on);
+  $("statusText").textContent = on ? "En vivo" : "Fuera del aire";
+}
 
 play.addEventListener("click", async () => {
   if (!STREAM_URL) { note.textContent = "Falta configurar la URL del stream para empezar a transmitir."; return; }
