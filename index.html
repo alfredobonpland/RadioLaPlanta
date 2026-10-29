@@ -14,6 +14,17 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Sombra profesional */
     margin-bottom: 1.5rem;
 }
+  <style>
+    /* Forzar formato horizontal / barra compacta para Caster.fm */
+    .card:has(iframe[title*="LIVE Radio Player"]) {
+        max-width: 600px !important;
+    }
+    iframe[title*="LIVE Radio Player"] {
+        width: 100% !important;
+        height: 75px !important;
+        border: none !important;
+        overflow: hidden !important;
+    }
 :root{--bg:#f2f6f2;--panel:#fff;--line:#d9e4db;--text:#0c1f14;--muted:#5b7165;--green:#12843c;--lime:#b6f23a;--hero:#08170f;--hero2:#0f3a22;
 box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#07130d;--panel:#0e1f16;--line:#1c3527;--text:#eaf5ec;--muted:#8fa597;--green:#2bc25f}}
@@ -95,12 +106,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <p>Éxitos actuales y grandes clásicos retro en una transmisión continua, pensada para hacer vibrar tus sentidos.</p>
         <div class="player">
           <!-- Contenedor del Reproductor de Caster.fm -->
-<section class="card" id="player" aria-label="Reproductor">
-    <div data-type="newStreamPlayer" data-publicToken="TU_TOKEN_DE_CASTER_FM" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
+<div class="player-container">
+    <div data-type="newStreamPlayer" data-publicToken="5267ace1-32c8-4d57-b460-111ea326b9ff" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
         <a href="https://www.caster.fm">Shoutcast Hosting</a> 
+        <a href="https://www.caster.fm">Stream Hosting</a> 
+        <a href="https://www.caster.fm">Radio Server Hosting</a>
     </div>
-    <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
-</section>
     <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
 </div>
           
