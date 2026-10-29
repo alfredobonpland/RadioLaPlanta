@@ -75,16 +75,6 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
 @media (max-width:560px){nav a:nth-child(n+3){display:none}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 </style>
-  <style>
-    /* Forzar formato barra horizontal para el reproductor de Caster.fm */
-    iframe[title*="LIVE Radio Player"] {
-        width: 100% !important;
-        max-width: 100% !important;
-        height: 80px !important;
-        border: none !important;
-        overflow: hidden !important;
-    }
-</style>
 </head>
 <body>
 <header>
@@ -105,12 +95,12 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <p>Éxitos actuales y grandes clásicos retro en una transmisión continua, pensada para hacer vibrar tus sentidos.</p>
         <div class="player">
           <!-- Contenedor del Reproductor de Caster.fm -->
-<div class="player-container">
-    <div data-type="newStreamPlayer" data-publicToken="5267ace1-32c8-4d57-b460-111ea326b9ff" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
+<section class="card" id="player" aria-label="Reproductor">
+    <div data-type="newStreamPlayer" data-publicToken="TU_TOKEN_DE_CASTER_FM" data-theme="light" data-color="e81e4d" data-channelId="" data-rendered="false" class="cstrEmbed">
         <a href="https://www.caster.fm">Shoutcast Hosting</a> 
-        <a href="https://www.caster.fm">Stream Hosting</a> 
-        <a href="https://www.caster.fm">Radio Server Hosting</a>
     </div>
+    <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
+</section>
     <script src="//cdn.cloud.caster.fm//widgets/embed.js"></script>
 </div>
           
