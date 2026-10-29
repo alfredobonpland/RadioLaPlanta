@@ -94,7 +94,8 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <h1>La música que te acompaña todo el día.</h1>
         <p>Éxitos actuales y grandes clásicos retro en una transmisión continua, pensada para hacer vibrar tus sentidos.</p>
         <div class="player">
-          <button class="play" id="play" aria-label="Reproducir"><svg viewBox="0 0 24 24" id="icon"><path d="M8 5v14l11-7z"/></svg></button>
+          <button class="play" id="play" aria-label="Reproducir">
+            <svg viewBox="0 0 24 24" id="icon"><path d="M8 5v14l11-7z"/></svg></button>
           <label class="vol"><svg viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3A4.5 4.5 0 0 0 14 8v8a4.5 4.5 0 0 0 2.5-4z"/></svg><span class="sr" hidden>Volumen</span><input type="range" id="vol" min="0" max="1" step="0.01" value="0.8" aria-label="Volumen"></label>
           <p class="note" id="note" role="status"></p>
         </div>
