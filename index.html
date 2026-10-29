@@ -93,19 +93,14 @@ footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
         <span class="status" id="status"><span class="dot"></span><span id="statusText">Fuera del aire</span></span>
         <h1>La música que te acompaña todo el día.</h1>
         <p>Éxitos actuales y grandes clásicos retro en una transmisión continua, pensada para hacer vibrar tus sentidos.</p>
-<div class="player-container">
-    <div data-type="newStreamPlayer" 
-         data-publicToken="5267ace1-32c8-4d57-b460-111ea326b9ff" 
-         data-theme="light" 
-         data-color="009C46" 
-         data-channelId="radiolaplanta" 
-         data-rendered="false" 
-         class="cstrEmbed">
-        <a href="https://www.caster.fm">Shoutcast Hosting</a> 
-        <a href="https://www.caster.fm">Stream Hosting</a> 
-        <a href="https://www.caster.fm">Radio Server Hosting</a>
-    </div>
-    <script src="//cdn.cloud.caster.fm/widgets/embed.js" async></script>
+<div class="player-container" style="background: #111; padding: 20px; border-radius: 12px; text-align: center; border: 1px solid #12843c; max-width: 600px; width: 100%; margin: 0 auto;">
+    <p style="color: #fff; margin-bottom: 12px; font-weight: bold; font-family: sans-serif; font-size: 16px;">Radio La Planta - En Vivo</p>
+    
+    <!-- Reproductor nativo horizontal con controles y volumen -->
+    <audio controls autoplay style="width: 100%;">
+        <source src="https://radiolaplanta.ismyradio.com/stream" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
 </div>
           
           <p class="note" id="note" role="status"></p>
